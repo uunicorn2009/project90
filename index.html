@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math Quiz</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css">
+
+<script src="main.js"></script>
+</head>
+<body>
+	<center>
+<h1>Guess The Word Game</h1>
+<br>
+<div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
+	<h3>Player 1 login for the game </h3>
+	<label>Username: </label>
+	<input type="text" id="Player1_name_input" placeholder="Player 1 name here" class="form-control">
+	<br>
+</div>
+<br>
+<div class="col-lg-4 col-sm-8 col-xs-11 login_div2">
+	<h3>Player 2 login for the game </h3>
+	<label>Username: </label>
+	<input type="text" id="Player2_name_input" placeholder="Player 2 name here" class="form-control">
+	<br>
+</div>
+<br>
+<button class="btn btn-primary" onclick="adduser();">login</button>
+	</center>
+	<center>
+		<h2 style="color: white;">Math Quiz!</h2>
+<h3 id="Q_turn"></h3>
+<h3 id="A_turn"></h3>
+<div id="output"></div>
+
+		<br>
+		<br>
+
+		<label>Send You Word: <b style="color: red">Try putting word which has 5 or more alphabet</b></label>
+		<input type="text" id="word" placeholder="write a word" class="form-control">
+
+		<br>
+		<button class="btn btn-success" onclick="sent();" style="width: 30%;">Sent</button>
+
+	</center>
+
+</body>
+</html>
